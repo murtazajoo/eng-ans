@@ -254,3 +254,5 @@ function clickedShow(a){
 dataHtml.innerHTML = ""
 showData(a)
 }
+
+showData(Flamingo)
