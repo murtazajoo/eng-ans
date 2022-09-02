@@ -148,7 +148,7 @@ let Vistas = [
         "question": "The two accounts that you have read above are based in two distant cultures. What is the commonality of theme found in both of them? ",
         "answer": "The autobiographical accounts included in the “Memories of Childhood” are by two women from socially marginalized sections in two distant cultures of the world. One highlights the evil practice of racial prejudice while the other talks about the hierarchical Indian caste system and untouchability. The first part traces how the author, a Native American, was victimized at the hands of the European staff of her boarding school. The second account gives a picture of the hardships and humiliations faced by the Indian ‘Dalits’ from the eyes of a third standard student. "
     },
-    
+
     {
         "question": "Would Charley ever go back to the ticket counter on the third  ",
         "answer": "Answer: No, Charley will never go back to the third-level ticket-counter to purchase tickets for himself and his wife to Galesburg because his imagination was third-level."
@@ -211,7 +211,58 @@ let Vistas = [
     }
 ]
 
+let vImp = [
+    {
 
+        "question": " 51] Explain the given lines :   Trees sprinting, the merry children spillin  out of their homes, but after the airport’s  security check, standing a few yards away, I looked again at her, wan, pale as a late winter’s moon and felt that old familiar ache. ",
+
+        "answer":`<a href="https://www.zigya.com/study/book?class=12&board=gbshse&subject=English&book=Flamingo&chapter=My+Mother+At+Sixty-Six&q_type=&q_topic=My+Mother+At+Sixty-Six+&q_category=E&question_id=ENEN12122286">ClickHere </a> For Answer`
+    },
+    {
+        "question": " How in your opinion can Mukesh realise his dream ? ",
+        "answer": "He can realise this dream with determination and hard work. There might be many obstacles on his way but a strong willpower will help him move towards the way to success. The fact that he is willing to walk a long distance in order to learn the vocation, underlines his firm resolve."
+    },
+    {
+        "question": "Why did the peddler leave a Christmas gift for Edla ?  ",
+        "answer": "Edla's hospitality and kindness transformed the peddler completely. He decided to mend his wrong ways and return the thirty kronors that he had stolen. So he wrapped the notes and a rattrap in a package and left them with a note addressed to Edla."
+    },
+    {
+        "question": " How was Gandhi able to influence lawyers ? Give two examples ?  ",
+        "answer": "Gandhi was able to influence the lawyers through his conviction earnestness and pertinent questioning. Gandhi reproached the lawyers of Muzzafarpur for charging a large sum of money as fee from the peasants. Later the lawyers from Bihar opined that they would return to their own places in the event of his imprisonment."
+    },
+    {
+        "question": "What does the poet want for the children of the slums ? Why? ",
+        "answer": "He wants the children of the slums to venture into the outside world, beyond the boundaries of their slums, and experience a better present and future life. <br> The elementary school in the slum does not serve any purpose with its poor infrastructure and disinterested students.27"
+    },
+    {
+        "question": " In the poem ' Keeping Quiet ' does the poet advocate total inactivity and death ",
+        "answer": "No, the poet does not advocate total inactivity and death. In fact, he says “What I want should not be confused with total inactivity”. He describes people walking peacefully, doing nothing. He wants us to introspect, which can happen only when one is alive and conscious."
+    },
+    {
+        "question": "What do you infer from Sam's letter to charley? ",
+        "answer": "The letter was addressed to Charley. In the letter Sam had informed Charley that he was living on the third level. He had also told Charley and his wife to keep looking for the third level. Clearly the letter was a product of Charley's imagination."
+    },
+    {
+        "question": "why is an adult's perspective on life different from that of child's ? ",
+        "answer": ": An adult's perspective on life is different from that of a child because of the difference between their respective experiences and exposure to the world around them. An adult comes across all sorts of experiences—good or bad, pleasant or unpleasant, happy or sad, encouraging or discouraging."
+    },
+    {
+        "question": " Why do celebrities find fault with an interview ? ",
+        "answer": "Most of the celebrities find faults with being interviewed because they feel it is an 'unnecessary invasion' into their personal lives. They believe it tarnishes their image and victimizes them."
+    },
+    {
+        "question": "The reader's sympathy is with the peddler right from the beginning of the story . Why is this so ? Is the sympathy justified? ",
+        "answer": "The sympathy is justified because in the end we find out that the peddler is capable of appreciating genuine goodness and hospitality. When he is treated with respect and kindness, he reciprocates the same in the best way he can."
+    },
+    {
+        "question": "Why is Antarctica the place to go to the understand the past , present and future of the planet earth  ? ",
+        "answer": "The ice-sheets are breaking, and thus, global warming is setting in. Also, the beauty of the existing ice covered oceans is a source of inspiration to do whatever is possible to save and preserve its natural resources. Thus, Antarctica is definitely the place to go to understand the world."
+    },
+    {
+        "question": " What happened at the Golden Lion Hotel ? (Evans tries an O-level)",
+        "answer": "He left fake clues to misguide the officials chasing him. Even as the Governor heaved a sigh of relief after nabbing him in the Golden Lion hotel, Evans was secretly cooking and executing another path of escape. The prison officer and the van used by the Governor for transferring Evans back to the prison were forged."
+    },
+]
 
 
 
@@ -246,13 +297,14 @@ function showData(whichBook) {
 <br>`
 
     }
+document.getElementById("tQue").innerText = whichBook.length + " Important Questions"
 
 }
 
 
-function clickedShow(a){
-dataHtml.innerHTML = ""
-showData(a)
+function clickedShow(a) {
+    dataHtml.innerHTML = ""
+    showData(a)
 }
 
 showData(Flamingo)
