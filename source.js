@@ -281,9 +281,12 @@ let dataHtml = document.getElementById('dataEntry')
 function showData(whichBook) {
 
     for (let i = 0; i < whichBook.length; i++) {
+        let wordsLength = whichBook[i].answer.split(" ").length
+        console.log(wordsLength)
         dataHtml.innerHTML += `
     <p class="btn btn-success  w-100" >
      ${whichBook[i].question}
+     <p>Answer Length : ${wordsLength} words</p>
     </p>
   
   
