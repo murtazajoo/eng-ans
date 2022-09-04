@@ -1,46 +1,201 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
+    <meta name="theme-color" content="#0d8f5f">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>English Ans</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+     
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<style>
+  /* @media(min-width : 800px ){
+    body{
+      background-color: #333;
+      color: #fff;
+      background-image: url(jj.png);
+    }
+    .container{
+      display: none !important;
+    }
+    .message{
+      display: block;
+    }
+  }
+  .message{
+    display: none;
+  } */
+     body{
+        min-height: 95vh;
+        
+    background-image: url(Untitled\ design.png);
+    background-position:bottom;
+    background-size: cover;
+    }
+/* From uiverse.io */
+.fancy {
+    width: 80%;
+ background-color: transparent;
+ border: 2px solid #000;
+ border-radius: 0;
+ box-sizing: border-box;
+ color: #fff;
+ cursor: pointer;
+ display: inline-block;
+ float: right;
+ font-weight: 700;
+ letter-spacing: 0.05em;
+ margin:20px auto;
+ outline: none;
+ overflow: visible;
+ padding: 1.25em 2em;
+ position: relative;
+ text-align: center;
+ text-decoration: none;
+ text-transform: none;
+ transition: all 0.3s ease-in-out;
+ user-select: none;
+ font-size: 13px;
+}
 
-  </head>
-  <body style="margin: 0; padding:0 ;">
-      <center class="bg-success nkk">
-           <div class=" p-5 container-fluid">
-            <h1 style="color: white; font-family:monospace; letter-spacing: 2px; font-size: 40px;">English Ans</h1>
-            </div>
-            <div class="btn-group mb-4"    role="group" aria-label="Basic example">
-                <button type="button"  onclick="clickedShow(Flamingo)" class="btn btn-warning">Flamingo</button>
-            <button type="button" onclick="clickedShow(FlamingoPoetry)"  class="btn btn-primary">Flamingo Poetry</button>
-            <button type="button" onclick="clickedShow(Vistas)"  class="btn btn-info">Vistas </button>
-            <button type="button" onclick="clickedShow(vImp)"  class="btn btn-danger">V.Imp </button>
+.fancy::before {
+ content: " ";
+ width: 1.5625rem;
+ height: 2px;
+ background: black;
+ top: 50%;
+ left: 1.5em;
+ position: absolute;
+ transform: translateY(-50%);
+ transform-origin: center;
+ transition: background 0.3s linear, width 0.3s linear;
+}
 
+.fancy .text {
+ font-size: 1.125em;
+ line-height: 1.33333em;
+ padding-left: 2em;
+ display: block;
+ text-align: left;
+ transition: all 0.5s ease-in-out;
+ text-transform: uppercase;
+ text-decoration: none;
+ color: black;
+}
+
+.fancy .top-key {
+ height: 2px;
+ width: 1.5625rem;
+ top: -2px;
+ left: 0.625rem;
+ position: absolute;
+ background: #e8e8e8;
+ transition: width 0.8s ease-out, left 0.3s ease-out;
+}
+
+.fancy .bottom-key-1 {
+ height: 2px;
+ width: 1.5625rem;
+ right: 1.875rem;
+ bottom: -2px;
+ position: absolute;
+ background: #e8e8e8;
+ transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy .bottom-key-2 {
+ height: 2px;
+ width: 0.625rem;
+ right: 0.625rem;
+ bottom: -2px;
+ position: absolute;
+ background: #e8e8e8;
+ transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy:hover {
+ color: white;
+ background: black;
+}
+
+.fancy:hover::before {
+ width: 0.9375rem;
+ background: white;
+}
+
+.fancy:hover .text {
+ color: white;
+ padding-left: 1.5em;
+}
+
+.fancy:hover .top-key {
+ left: -2px;
+ width: 0px;
+}
+
+.fancy:hover .bottom-key-1,
+ .fancy:hover .bottom-key-2 {
+ right: 0;
+ width: 0;
+}
+</style>
+</head>
+
+     
+        <body  class="d-flex flex-column justify-content-center  ">
+          <center>
+          <div class="container  d-grid  p-3 ">
+    <h1 style="text-align: center; width:100%; color:#333;font-size: 40px;margin: 0 ;padding: 10px 0; font-family: cursive;">hello!</h1>
+
+            <a class="fancy" href="english.html">
+                <span class="top-key"></span>
+                <span class="text">English</span>
+                <span class="bottom-key-1"></span>
+                <span class="bottom-key-2"></span>
+              </a> 
+              <a class="fancy" href="comingsoon.html">
+                <span class="top-key"></span>
+                <span class="text">Biology</span>
+                <span class="bottom-key-1"></span>
+                <span class="bottom-key-2"></span>
+              </a><a class="fancy" href="comingsoon.html">
+                <span class="top-key"></span>
+                <span class="text">Physics</span>
+                <span class="bottom-key-1"></span>
+                <span class="bottom-key-2"></span>
+              </a><a class="fancy" href="comingsoon.html">
+                <span class="top-key"></span>
+                <span class="text">Chemistry</span>
+                <span class="bottom-key-1"></span>
+                <span class="bottom-key-2"></span>
+              </a><a class="fancy" href="comingsoon.html">
+                <span class="top-key"></span>
+                <span class="text">Maths</span>
+                <span class="bottom-key-1"></span>
+                <span class="bottom-key-2"></span>
+              </a><a class="fancy" href="comingsoon.html">
+                <span class="top-key"></span>
+                <span class="text">EVS</span>
+                <span class="bottom-key-1"></span>
+                <span class="bottom-key-2"></span>
+              </a>
         </div>
-        <button type="button"   class="btn btn-light"><a href="WritingskillsGrammar.html">[Writing skills / Grammar] </a></button>
-<br><br>
     </center>
-      
-      
-      <center>
-        <div class="alert alert-success" id="tQue" role="alert">
-            
-          </div>
-          <br>
-    <div id="dataEntry" class="m"></div>
-    
-    <p>All all important questions by : <a href="https://sahilsharifdinbhat.blogspot.com/2021/07/important-question-from-general-english.html">sahilsharifdinbhat</a></p>
-    <p>Source of Answers : internet</p>
-    <a href="Disclaimer.html">Disclaimer</a>
-    <p>.</p>
-</center>
 
-<script src="source.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 
+        <div class="message">Only For Small Screens</div>
 </body>
+
 </html>
