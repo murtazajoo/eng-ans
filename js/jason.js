@@ -1,3 +1,7 @@
+export {Flamingo , Vistas ,vImp , FlamingoPoetry};
+
+
+
 let Flamingo = [
     {
         "question": "What had been put up on the bulletin-board?",
@@ -264,50 +268,3 @@ let vImp = [
     },
 ]
 
-
-
-
-
-
-
-
-let dataHtml = document.getElementById('dataEntry')
-
-// showData(Flamingo)
-
-
-
-
-function showData(whichBook) {
-
-    for (let i = 0; i < whichBook.length; i++) {
-        let wordsLength = whichBook[i].answer.split(" ").length
-        console.log(wordsLength)
-        dataHtml.innerHTML += `
-    <p class="btn btn-success  w-100" >
-     ${whichBook[i].question}
-     <p>Answer Length : ${wordsLength} words</p>
-    </p>
-  
-  
-    <div class="card card-body">
-    ${whichBook[i].answer}
-      
-    </div>
-
-<br>
-
-<br>`
-
-    }
-document.getElementById("tQue").innerText = whichBook.length + " Important Questions"
-
-}
-
-
-function clickedShow(a) {
-    dataHtml.innerHTML = ""
-    showData(a)
-}
-
-showData(Flamingo)
