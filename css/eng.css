@@ -4,14 +4,14 @@
   }
 
   body{
-   
-    background-image: url(.../img/Untitled\ design\ \(2\).png);
-    background-position: bottom right;
+        background-position: bottom right;
+    background-image: url(../img/Untitled\ design\ \(2\).png);
     background-size: cover;
     background-attachment: fixed;
     background-color: rgb(255, 255, 255) !important;
     background-blend-mode: multiply;
   }
+
 #dataEntry{
   width: 90%;
 
