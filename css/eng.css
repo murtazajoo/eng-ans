@@ -9,7 +9,6 @@
   #subject-name{
 font-family: cursive;
 font-size: 35px;
-
   }
   
   .arrow{
@@ -23,10 +22,17 @@ transform: rotate(90deg);
     background-size: contain;
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
+  }
+  body{
+        background-position: bottom right;
+    background-image: url(../img/Untitled\ design\ \(2\).png);
+    background-size: cover;
+    background-attachment: fixed;
     background-color: rgb(255, 255, 255) !important;
     background-blend-mode: multiply;
     height: 100%;
   }
+
 #dataEntry{
   width: 90%;
 
