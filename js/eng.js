@@ -4,22 +4,20 @@ import { Flamingo, Vistas, vImp, FlamingoPoetry } from './jason.js'
 let dataHtml = document.getElementById('dataEntry')
 
 function showData(whichBook) {
-    for (let i = 0; i < whichBook.length; i++) {
+    for (let i = 1; i < whichBook.length; i++) {
         let wordsLength = whichBook[i].answer.split(" ").length
         dataHtml.innerHTML += `
-        <button class="accordion"> ${whichBook[i].question} </button>
+        <button class="accordion">Q.${(i)+": "+ whichBook[i].question} </button>
 <div class="panel">
-  <p> ${whichBook[i].answer}</p>
-  <span class="words"> ${wordsLength} Words</span>
+  <p>Ans.${(i)+" _ <br>"+whichBook[i].answer}</p>
+  <small class="words"> ${wordsLength} Words</small>
 </div>
-<br>
-<br>
 `
 // yp
 
 
     }
-    document.getElementById("tQue").innerText = whichBook.length + " Important Questions"
+    document.getElementById("tQue").innerText = whichBook.length + " Important Questions Of "+ whichBook[0].name
 }
 
 
@@ -34,6 +32,7 @@ btnVistas.addEventListener('click',()=>{
 let btnFlamingo = document.getElementById("btnFlamingo")
 
 btnFlamingo.addEventListener('click',()=>{
+  btnFlamingo
     clickedShow(Flamingo)
 })
 
@@ -60,7 +59,7 @@ showData(Flamingo)
 
 var acc = document.getElementsByClassName("accordion");
 var i;
-
+let arrow = document.getElementsByClassName('arrow')
 function contAgain(){
 
     for (i = 0; i < acc.length; i++) {
@@ -69,6 +68,7 @@ function contAgain(){
           var panel = this.nextElementSibling;
           if (panel.style.display === "block") {
             panel.style.display = "none";
+
           } else {
             panel.style.display = "block";
           }

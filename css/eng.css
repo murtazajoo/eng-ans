@@ -1,15 +1,31 @@
   .words{
     float: right;
-    padding:0 10px;
+    font-size: 12px;
   }
+  @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&family=Raleway:wght@200&display=swap');
+.underline{
+  text-decoration: underline;
+}
+  #subject-name{
+font-family: cursive;
+font-size: 35px;
 
-  body{
-    background-image: url(img/Untitled\ design\ \(2\).png);
+  }
+  
+  .arrow{
+  padding:0 20px;
+  display: flex;
+transform: rotate(90deg);
+}
+  main{
+    background-image: url(../img/Untitled\ design\ \(2\).png);
     background-position: bottom right;
-    background-size: cover;
-    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
     background-color: rgb(255, 255, 255) !important;
     background-blend-mode: multiply;
+    height: 100%;
   }
 #dataEntry{
   width: 90%;
@@ -18,6 +34,9 @@
 }
 
   .accordion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid rgba(51, 51, 51, 0.379);
   background-color: #fff;
   color: #444;
@@ -27,22 +46,26 @@
   /* border: none; */
   text-align: left;
   outline: none;
-  font-size: 18px;
+  font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   transition: 0.4s;
+  letter-spacing: 1px;
+  font-family: 'Prompt', sans-serif;
 }
 
-.active, .accordion:hover {
-  background-color: #fff; 
+.active {
+  background-color: rgb(45, 169, 167); 
 }
 
 .panel {
   border: 1px solid rgba(51, 51, 51, 0.249);
-  font-size: 18px;
-  font-family: Arial, Helvetica, sans-serif;
-  padding:  18px;
+  font-size: 20px;
+  color: #333;
+  font-family: 'Raleway', sans-serif;
+  padding:  20px;
   text-align: left;
   display: none;
-  background-color: white;
+  background-color: rgba(29, 153, 124, 0.091);
   overflow: hidden;
+  letter-spacing: 1px;
 }

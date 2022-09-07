@@ -2,7 +2,9 @@ export {Flamingo , Vistas ,vImp , FlamingoPoetry};
 
 
 
-let Flamingo = [
+let Flamingo = [{
+    name: "Flamingo"
+},
     {
         "question": "What had been put up on the bulletin-board?",
         "answer": "The French districts of Alsace and Lorraine had been taken over by the Prussians. Hence, the bulletin board displayed the news that an order had come from Berlin to teach only German in the schools of Alsace and Lorraine."
@@ -98,6 +100,9 @@ let Flamingo = [
 ]
 let FlamingoPoetry = [
     {
+        name: "FlamingoPoetry"
+    },
+    {
         "question": "What is the kind of pain and ache that the poet feels? ",
         "answer": "The poetess feels pain on seeing the pale and corpse-like face of her mother and it's said that her old familiar pain or the ache returns. Perhaps she has experienced this fear since her childhood. She realizes that her mother's face has become like the withered moon of the winter season"
     },
@@ -143,7 +148,9 @@ let FlamingoPoetry = [
     }
 ]
 
-let Vistas = [
+let Vistas = [{
+    name:"Vistas"
+},
     {
         "question": "Reflecting on the story, what did you feel about Evans’ having the last laugh? ",
         "answer": "The Governor was happy that ultimately he was able to track him down using his intelligence and knowledge of German. However, Evans had planned a step ahead. With his successful escape, Evans definitely had a well earned last laugh."
@@ -215,10 +222,10 @@ let Vistas = [
     }
 ]
 
-let vImp = [
+let vImp = [{name:"All"},
     {
 
-        "question": " 51] Explain the given lines :   Trees sprinting, the merry children spillin  out of their homes, but after the airport’s  security check, standing a few yards away, I looked again at her, wan, pale as a late winter’s moon and felt that old familiar ache. ",
+        "question": "Explain the given lines :   Trees sprinting, the merry children spillin  out of their homes, but after the airport’s  security check, standing a few yards away, I looked again at her, wan, pale as a late winter’s moon and felt that old familiar ache. ",
 
         "answer":`<a href="https://www.zigya.com/study/book?class=12&board=gbshse&subject=English&book=Flamingo&chapter=My+Mother+At+Sixty-Six&q_type=&q_topic=My+Mother+At+Sixty-Six+&q_category=E&question_id=ENEN12122286">ClickHere </a> For Answer`
     },
