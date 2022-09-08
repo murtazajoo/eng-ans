@@ -63,4 +63,24 @@
   letter-spacing: 1px;
 }
 
+
+
+#ads{
+  position: fixed;
+  border: 1px solid rgb(89, 89, 89);
+  width: 100%;
+  transition: 500ms;
+  height: 60px;
+  transform: translateY(0px);background-color: aliceblue;
+  z-index: 100;
+}
+#ads button{
+  transform: rotate(-90deg);
+  border: none;
+  position: absolute;
+  bottom: -10px;
+  padding: 10px;
+  background-color: aqua;
+}
+
     
