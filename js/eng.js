@@ -1,8 +1,7 @@
 import { Flamingo, Vistas, vImp, FlamingoPoetry } from './jason.js'
-import { contAgain,popoverList,popoverTriggerList } from './source.js'
+import { contAgain,popoverList,popoverTriggerList} from './source.js'
 
-
-let dataHtml = document.getElementById('dataEntry')
+ let dataHtml = document.getElementById('dataEntry')
 
 function showData(whichBook) {
   for (let i = 1; i < whichBook.length; i++) {

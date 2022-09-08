@@ -1,15 +1,4 @@
-let adsbtn = document.getElementById("closead")
-adsbtn.addEventListener('click',()=>{
-  let adsbox = document.getElementById('ads')
 
-  if(adsbox.style.transform = "translateY(0px)"){
-      adsbox.style.transform="translateY(-60px)"
-  } 
-  setInterval(() => {
-    adsbox.style.transform="translateY(0px)"
-  }, 10000);
-  
-})
 
 var acc = document.getElementsByClassName("accordion");
 var i;
@@ -29,8 +18,10 @@ function contAgain() {
         });
     }
 }
-
+function loaded(){
+    document.getElementById('loader').style.display="none"
+}
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 
-export {contAgain , popoverList , popoverTriggerList}
+export {contAgain , popoverList , popoverTriggerList ,go,loaded}

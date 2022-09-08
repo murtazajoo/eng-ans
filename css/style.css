@@ -64,7 +64,18 @@
   letter-spacing: 1px;
 }
 
-
+#loader{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  z-index: 99999999;
+}
 
 #ads{
   position: fixed;
