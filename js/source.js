@@ -18,10 +18,7 @@ function contAgain() {
         });
     }
 }
-function loaded(){
-    document.getElementById('loader').style.display="none"
-}
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 
-export {contAgain , popoverList , popoverTriggerList ,go,loaded}
+export {contAgain , popoverList , popoverTriggerList}
