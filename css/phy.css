@@ -30,6 +30,7 @@
  }
  100%{
     transform: translateY(-200%);
+    opacity: 0;
  }
 }
 
