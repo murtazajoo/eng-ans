@@ -1,4 +1,5 @@
 import { Flamingo, Vistas, vImp, FlamingoPoetry } from './jason.js'
+import { contAgain,popoverList,popoverTriggerList } from './source.js'
 
 
 let dataHtml = document.getElementById('dataEntry')
@@ -56,28 +57,6 @@ function clickedShow(r) {
 }
 
 showData(Flamingo)
-
-var acc = document.getElementsByClassName("accordion");
-var i;
-let arrow = document.getElementsByClassName('arrow')
-function contAgain() {
-
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function () {
-      this.classList.toggle("active");
-      var panel = this.nextElementSibling;
-      if (panel.style.display === "block") {
-        panel.style.display = "none";
-
-      } else {
-        panel.style.display = "block";
-      }
-    });
-  }
-}
-
 contAgain()
 
 
-const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
