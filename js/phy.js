@@ -17,8 +17,22 @@ let physicsImp = [
     "question" :"Electric field Intensity on axial line" ,
     "answer"   : "Axial-line.jpeg"
  },
-  
+ {
+    "question" :"Electric Dipole" ,
+    "answer"   : "Dipole.jpeg"
+ },
+ {
+    "question" :"Isobars_Isotopes_Isotones" ,
+    "answer"   : "iso.png"
+ }, {
+    "question" :"What is mirror formula 12th?" ,
+    "answer"   : "mirror-formula.png"
+ },
+ {
+    "question" :"More...soon..." ,
+ },
 ]
+
 
 
 

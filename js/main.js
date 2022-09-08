@@ -7,6 +7,6 @@ let go = adsbtn.addEventListener('click',()=>{
   } 
   setInterval(() => {
     adsbox.style.transform="translateY(0px)"
-  }, 10000);
+  }, 50000);
   
 })
