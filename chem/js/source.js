@@ -60,9 +60,10 @@ physicalBtn.addEventListener('click', ()=>{
 
 
     function whichBook(a){
-        console.log(a)
         InsertData.innerHTML=""
         displaydata(a,InsertData)
         contAgain()
 }
+
+
 whichBook(organicChem)

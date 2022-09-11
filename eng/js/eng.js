@@ -1,21 +1,8 @@
 import { Flamingo, Vistas, vImp, FlamingoPoetry } from './jason.js'
-import { contAgain,popoverList,popoverTriggerList} from '../../js/source.js'
+import { contAgain,popoverList,popoverTriggerList,showData} from '../../js/source.js'
 
  let dataHtml = document.getElementById('dataEntry')
 
-function showData(whichBook) {
-  for (let i = 1; i < whichBook.length; i++) {
-    let wordsLength = whichBook[i].answer.split(" ").length
-    dataHtml.innerHTML += `
-        <button class="accordion">Q.${(i) + ": " + whichBook[i].question} </button>
-<div class="panel">
-  <p>Ans.${(i) + " _ <br>" + whichBook[i].answer}</p>
-  <small class="words"> ${wordsLength} Words</small>
-</div>
-`
-  }
-  document.getElementById("tQue").innerText = whichBook.length + " Important Questions Of " + whichBook[0].name
-}
 
 
 let btnVistas = document.getElementById("btnVistas")
@@ -27,19 +14,18 @@ btnVistas.addEventListener('click', () => {
 
 
 let btnFlamingo = document.getElementById("btnFlamingo")
+let btnFlamingoPoetry = document.getElementById("btnFlamingoPoetry")
+let btnvImp = document.getElementById("btnvImp")
+
+
 
 btnFlamingo.addEventListener('click', () => {
-  btnFlamingo
-  clickedShow(Flamingo)
+clickedShow(Flamingo)
 })
-
-let btnFlamingoPoetry = document.getElementById("btnFlamingoPoetry")
 
 btnFlamingoPoetry.addEventListener('click', () => {
   clickedShow(FlamingoPoetry)
 })
-
-let btnvImp = document.getElementById("btnvImp")
 
 btnvImp.addEventListener('click', () => {
   clickedShow(vImp)
@@ -48,11 +34,11 @@ btnvImp.addEventListener('click', () => {
 
 function clickedShow(r) {
   dataHtml.innerHTML = ""
-  showData(r)
+  showData(r,dataHtml)
   contAgain()
 }
 
-showData(Flamingo)
+showData(Flamingo,dataHtml)
 contAgain()
 
 
