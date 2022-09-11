@@ -2,6 +2,7 @@
   font-family: cursive;
   font-size: 35px;
   color: turquoise;
+  padding: 20px 0;
 }
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300&family=Raleway:wght@200&display=swap");
 
@@ -47,7 +48,9 @@ body {
 .active {
   background-color: rgb(45, 169, 167);
 }
-
+#back{
+  padding: 10px;
+}
 .panel {
   border: 1px solid rgba(51, 51, 51, 0.249);
   font-size: 20px;

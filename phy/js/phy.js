@@ -1,4 +1,4 @@
-import { contAgain, popoverList, popoverTriggerList } from "../../js/source.js";
+import { contAgain, popoverList, popoverTriggerList ,displaydata } from "../../js/source.js";
 
 let dataEntry = document.getElementById("phy-data");
 
@@ -44,7 +44,7 @@ let physicsImp = [
   },
   {
     question: "Applcations of TIR",
-    answer: "",
+    answer: "appOfTIR.jpeg",
   },
     {
       question: "conductors,insulators and semiconductors on the basis of their energy bands?",
@@ -109,34 +109,29 @@ let physicsImp = [
     },
     {
       question: " Phenomena of Self-induction and its S.I unit?",
-      answer: "phe-of-selfinduction.jpeg",
+      answer: "pheOfSelfinduction.jpeg",
     },
     {
       question: "Define coeff. of self-induction?",
-      answer: "coff-of-induction.jpeg",
+      answer: "cooOfInduc.jpeg",
     },
-
-
-
-
+    {
+      question: "State gauss's theorm?",
+      answer: "",
+    },
+    {
+      question: "?",
+      answer: "",
+    },
 
   {
     question: "More...soon...",
   },
 ];
 
-function displaydata(q) {
-  for (let i = 0; i < q.length; i++) {
-    dataEntry.innerHTML += `
-<button class="accordion">${q[i].question} </button>
-<div class="panel">
-<img style="width: 100%;" src="./img/${q[i].answer}" alt="">
-</div>`;
-  }
- document.getElementById('total').innerHTML = q.length
-}
 
-displaydata(physicsImp);
+
+displaydata(physicsImp,dataEntry);
 contAgain();
 
 // let zoomMsg = document.getElementById("zoom-msg")

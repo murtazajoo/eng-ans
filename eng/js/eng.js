@@ -13,9 +13,6 @@ function showData(whichBook) {
   <small class="words"> ${wordsLength} Words</small>
 </div>
 `
-    // yp
-
-
   }
   document.getElementById("tQue").innerText = whichBook.length + " Important Questions Of " + whichBook[0].name
 }

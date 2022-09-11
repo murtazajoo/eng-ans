@@ -18,7 +18,17 @@ function contAgain() {
         });
     }
 }
+function displaydata(what,where) {
+    for (let i = 0; i < what.length; i++) {
+      where.innerHTML += `
+  <button class="accordion">${what[i].question} </button>
+  <div class="panel">
+  <img style="width: 100%;" src="./img/${what[i].answer}" alt="">
+  </div>`;
+    }
+   document.getElementById('total').innerHTML = what.length
+  }
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 
-export {contAgain , popoverList , popoverTriggerList}
+export {contAgain , popoverList , popoverTriggerList , displaydata}
