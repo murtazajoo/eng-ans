@@ -8,6 +8,11 @@ body {
     background-blend-mode: multiply;
 
 }
+#subject-name{
+    font-family: cursive;
+    font-size: 35px;
+      }
+
 .container{
     background-color: #fff !important;
     width: 80% !important;

@@ -1,4 +1,4 @@
-import { contAgain, popoverList, popoverTriggerList } from "./source.js";
+import { contAgain, popoverList, popoverTriggerList } from "../../js/source.js";
 
 let dataEntry = document.getElementById("phy-data");
 

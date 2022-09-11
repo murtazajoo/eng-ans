@@ -1,5 +1,5 @@
 import { Flamingo, Vistas, vImp, FlamingoPoetry } from './jason.js'
-import { contAgain,popoverList,popoverTriggerList} from './source.js'
+import { contAgain,popoverList,popoverTriggerList} from '../../js/source.js'
 
  let dataHtml = document.getElementById('dataEntry')
 
