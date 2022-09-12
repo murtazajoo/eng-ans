@@ -23,7 +23,7 @@ border: 1px solid rgba(51, 51, 51, 0.306);
 /* From uiverse.io */
 h1,p {
     text-align: center;
-    width: 100%;
+    /* width: 100%; */
     color: rgb(22, 167, 154);
     margin: 0;
     /* padding: 10px 0; */

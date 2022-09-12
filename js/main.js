@@ -3,9 +3,11 @@ let go = adsbtn.addEventListener("click", () => {
   let adsbox = document.getElementById("ads");
 
   if ((adsbox.style.transform = "translateY(0px)")) {
-    adsbox.style.transform = "translateY(-60px)";
+    adsbox.style.transform = "translateY(60px)";
+    adsbtn.style.opacity = "0"
   }
   setInterval(() => {
+    adsbtn.style.opacity = "1"
     adsbox.style.transform = "translateY(0px)";
   }, 50000);
 });
