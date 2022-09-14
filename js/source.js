@@ -42,7 +42,7 @@ function dataOutput(topic , write){
         write.innerHTML += `
       <button class="accordion">${topic[i].question} </button>
 <div class="panel">
-<p>${topic[i].answer}</p>
+<p>Ans. ${[i]+"_<br>" +topic[i].answer}</p>
 <small class="words"> ${wordsLength} Words</small>
 
 </div>
