@@ -33,6 +33,12 @@ function dataOutput(topic , write){
   </div>`;
     }else{
       let wordsLength = topic[i].answer.split(" ").length
+      if(topic[i].answer == ""){
+        write.innerHTML +=   ` <button class="accordion">${topic[i].question} </button>
+        <div class="panel">
+        <p>Answer Is Not Available</p>`
+        
+      }else{
         write.innerHTML += `
       <button class="accordion">${topic[i].question} </button>
 <div class="panel">
@@ -40,7 +46,7 @@ function dataOutput(topic , write){
 <small class="words"> ${wordsLength} Words</small>
 
 </div>
-`
+`}
     }
           }
   }
