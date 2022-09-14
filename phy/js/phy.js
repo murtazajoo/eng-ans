@@ -1,8 +1,12 @@
-import { contAgain, popoverList, popoverTriggerList ,displaydata } from "../../js/source.js";
+import { contAgain, popoverList, popoverTriggerList ,dataOutput} from "../../js/source.js";
 
 let dataEntry = document.getElementById("phy-data");
 
 let physicsImp = [
+  {
+    name: "phy",
+    answer : ""
+},
   {
     question: "Derive einstein's photoelectric equation?",
     answer: "photoelectric=ns.png",
@@ -121,17 +125,14 @@ let physicsImp = [
     },
     {
       question: "?",
-      answer: "",
-    },
+      answer: "this is what",
+    }
 
-  {
-    question: "More...soon...",
-  },
 ];
 
 
 
-displaydata(physicsImp,dataEntry);
+dataOutput(physicsImp,dataEntry);
 contAgain();
 
 // let zoomMsg = document.getElementById("zoom-msg")

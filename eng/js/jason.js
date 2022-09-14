@@ -3,7 +3,8 @@ export {Flamingo , Vistas ,vImp , FlamingoPoetry};
 
 
 let Flamingo = [{
-    name: "Flamingo"
+    name: "Flamingo",
+    answer : ""
 },
     {
         "question": "What had been put up on the bulletin-board?",

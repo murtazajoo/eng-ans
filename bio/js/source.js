@@ -1,4 +1,4 @@
-import { contAgain,popoverList,popoverTriggerList,showData} from '../../js/source.js'
+import { contAgain, popoverList, popoverTriggerList ,dataOutput} from '../../js/source.js'
 
 let bioData = document.getElementById("bio-data");
 

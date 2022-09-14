@@ -1,5 +1,5 @@
 import { Flamingo, Vistas, vImp, FlamingoPoetry } from './jason.js'
-import { contAgain,popoverList,popoverTriggerList,showData} from '../../js/source.js'
+import { contAgain, popoverList, popoverTriggerList ,dataOutput} from '../../js/source.js'
 
  let dataHtml = document.getElementById('dataEntry')
 
@@ -34,11 +34,13 @@ btnvImp.addEventListener('click', () => {
 
 function clickedShow(r) {
   dataHtml.innerHTML = ""
-  showData(r,dataHtml)
+  dataOutput(r,dataHtml)
+  // showData(r,dataHtml)
   contAgain()
 }
 
-showData(Flamingo,dataHtml)
+// showData(Flamingo,dataHtml)
+dataOutput(Flamingo,dataHtml)
 contAgain()
 
 
