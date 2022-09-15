@@ -2,7 +2,7 @@ import { Flamingo, Vistas, vImp, FlamingoPoetry } from './jason.js'
 import { contAgain, popoverList, popoverTriggerList ,dataOutput} from '../../js/source.js'
 
  let dataHtml = document.getElementById('dataEntry')
-
+let tQue = document.getElementById('tQue')
 
 
 let btnVistas = document.getElementById("btnVistas")
@@ -37,8 +37,9 @@ function clickedShow(r) {
   dataOutput(r,dataHtml)
   // showData(r,dataHtml)
   contAgain()
+tQue.innerHTML= r[0].name
 }
-
+clickedShow(Flamingo,dataHtml)
 // showData(Flamingo,dataHtml)
 dataOutput(Flamingo,dataHtml)
 contAgain()
