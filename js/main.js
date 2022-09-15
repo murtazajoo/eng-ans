@@ -15,6 +15,6 @@ let go = adsbtn.addEventListener("click", () => {
 function loaded() {
   setInterval(() => {
     document.getElementById("loading").style.display = "none";
-  },2000);
+  },500);
 }
 
