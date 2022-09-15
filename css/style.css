@@ -28,6 +28,8 @@ body {
 }
 
 .accordion {
+  border-radius: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   text-align: left !important;
   display: flex;
   /* justify-content: center; */
@@ -48,6 +50,8 @@ body {
 }
 
 nav{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
   /* border-radius: 0 0 30px 30px; */
   z-index: 9999999999;
   position: fixed;
@@ -73,11 +77,13 @@ nav div{
   font-size: 25px;
   /* color: rgb(25, 99, 92) !important; */
   color: #fff;
+  gap: 5px;
   /* height: 10vh; */
 }
 nav div img{
   width: 40px;
   height: 40px;
+  border-radius: 100px;
 }
 nav p{
   margin: 0;
@@ -103,6 +109,10 @@ nav p{
   height: 30px;
 }
 .panel {
+  border-radius: 15px;
+
+  /* box-shadow: rgba(145, 0, 0, 0.45) 0px 5px 15px; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   border: 1px solid rgba(51, 51, 51, 0.249);
   font-size: 20px;
   color: #333;
