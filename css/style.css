@@ -48,13 +48,20 @@
   margin-bottom: 10px;
 }
 .popup-msg a{
-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(0, 0, 0, 0.456) 0px -2px 16px 2px inset;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(7, 60, 145, 0.456) 0px -2px 16px 2px inset;
 
   text-decoration: none;
   padding: 15px 30px;
   background-color: teal;
   color: white;
   border-radius: 10px;
+  font-family: "Prompt", sans-serif;
+  letter-spacing: 1px;
+  transition: 500ms;
+}
+.popup-msg a:hover{
+  background-color: rgb(22, 56, 56);
+
 }
 .popup-msg p{
 font-family:'Rubik Moonrocks', cursive; 
