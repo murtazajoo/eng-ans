@@ -23,7 +23,7 @@ let popUp =   document.getElementById('popUp')
 
 setInterval(() => {
  localStorage.clear()
-},60000);
+},120000);
 
 closePopup.addEventListener('click',()=>{
 popUp.style.display = "none"
