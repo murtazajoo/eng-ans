@@ -1,5 +1,5 @@
 let adsbtn = document.getElementById("closead");
-let go = adsbtn.addEventListener("click", () => {
+ adsbtn.addEventListener("click", () => {
   let adsbox = document.getElementById("ads");
 
   if ((adsbox.style.transform = "translateY(0px)")) {
@@ -18,3 +18,21 @@ function loaded() {
   },500);
 }
 
+let closePopup = document.getElementById('close')
+let popUp =   document.getElementById('popUp')
+
+setInterval(() => {
+ localStorage.clear()
+},60000);
+
+closePopup.addEventListener('click',()=>{
+popUp.style.display = "none"
+localStorage.setItem("appdownload", "closed");
+})
+
+if(localStorage.getItem("appdownload") !== 'closed'){
+  setTimeout(() => {
+    popUp.style.display="flex"
+    
+  }, 1500);
+}
