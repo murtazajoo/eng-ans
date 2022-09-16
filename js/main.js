@@ -24,6 +24,7 @@ let popUp =   document.getElementById('popUp')
 setInterval(() => {
  localStorage.clear()
 },120000);
+localStorage.clear()
 
 closePopup.addEventListener('click',()=>{
 popUp.style.display = "none"
