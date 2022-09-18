@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTRIBUTE</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{
+            background-color: #b1bded11 !important;
+        }
+        #illus{
+            width: 100%;
+        }
+        .card{
+            /* height: 70vh; */
+            width: 95%;
+            border-radius: 50px;
+            background-color: rgba(146, 227, 169, 0.3);
+            backdrop-filter: blur(3px);
+            margin: 0 auto;
+            text-align: center;
+            display: flex;
+    flex-direction: column;
+    justify-content: center;
+        }
+        textarea {
+  outline: none;
+  overflow: auto;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+h2{
+    font-family:"Rubik Moonrocks", cursive; 
+    /* color: rgb(54, 54, 98);
+    color
+    teal */
+    color: teal;
+    font-size: 35px;
+    padding: 30px 0 0 0 ;
+}
+p{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+    margin-bottom: 40px;
+    font-family:  "Prompt", sans-serif;
+    letter-spacing: 1px;
+    gap: 5px;
+}
+#save{
+    letter-spacing: 1px;
+    padding: 10px;
+    background-color: teal;
+    border-radius: 20px;
+    font-size: 18px;
+    color: white;
+    font-family: "Prompt", sans-serif;
+    border: none;
+    width: 40%;
+    margin: 0 auto;
+}
+label{
+    padding-left: 10px;
+}
+h1{
+    color: teal;
+    text-align: center;
+    padding: 30px 0 0 0;
+    letter-spacing: 1px;
+    font-family:cursive;
+    margin: 0;
+}
+strong{
+    font-weight: 900;
+    color: #92E3A9;
+    font-size: 50px;
+    font-family:"Rubik Moonrocks", cursive ;
+}
+ul{
+    padding: 50px 20px;
+    margin: 0 auto;
+    width: 80%;
+    font-family: "Prompt",sans-serif;
+}
+    </style>
+</head>
+<body>
+    <!-- <nav>
+        <div style="justify-content: center">
+          <img src="img/logo.png" alt="" />
+          <p>THE Ans</p>
+        </div>
+      </nav> -->
+<main>
+    <h1>"THE Ans" is made by people like <strong>you</strong> .</h1>
+<img src="img/illusadd.png" alt="" id="illus">
+
+<div class="card">
+    <h2>CONTRIBUTE</h2>
+
+    <form action="upload.php" method="post">
+        <p>
+            <label for="Question">Question</label>
+            <textarea name="Question" id="Question" cols="30" rows="3" placeholder="What is rotation?" required></textarea>
+        </p>
+        <p>
+            <label for="Answer">Answer </label>
+            <textarea name="Answer" id="Answer" cols="30" rows=" 10" placeholder="the action of rotating about an axis or centre." required></textarea>
+        </p>
+        <p>
+            <label for="By">Name</label>
+            <textarea name="By" id="By" cols="30" rows=" 1" placeholder="author" required></textarea>
+        </p>
+        <p>
+            <input id="save" type="submit">
+        </p>
+    </form>
+</div>
+</main>
+<footer>
+    <ul>
+        <li>Your Questions will be reviewed by our team.If they approve it then we will publish it on our website with your name 🙂</li>
+    </ul>
+</footer>
+
+
+ 
+</body>
+</html>

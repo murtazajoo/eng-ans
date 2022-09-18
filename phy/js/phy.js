@@ -1,10 +1,37 @@
-import { contAgain, popoverList, popoverTriggerList ,dataOutput} from "../../js/source.js";
+import { contAgain,popoverList, popoverTriggerList, searchQuestion,dataOutput,menuOpen,menuClose,hamburger,closeMenu} from '../../js/source.js'
 
 let dataEntry = document.getElementById("phy-data");
+hamburger.addEventListener('click',menuOpen)
+closeMenu.addEventListener('click',menuClose)
+let searchBtn = document.getElementById('search')
+
+
+searchBtn.addEventListener('click',()=>{
+  let userInput = document.getElementById('input-menu')
+  dataEntry.innerHTML =""
+  // searchQuestion(Flamingo,userInput,dataHtml)
+  
+   searchQuestion(physicsImp,userInput,dataEntry)
+   contAgain()
+
+  userInput.value = ""
+  if( dataEntry.innerHTML ==""){
+    dataEntry.innerHTML="<h1>Sorry <br> No Result Found</h1>"
+  contAgain()
+
+  }
+  contAgain()
+})
+
+
+setInterval(() => {
+  contAgain()
+}, 500);
 
 let physicsImp = [
   {
     name: "phy",
+    question:"",
     answer : ""
 },
   {

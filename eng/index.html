@@ -27,27 +27,21 @@
 
     <div id="ads">
       <center>
-        <script type="text/javascript">
-          atOptions = {
-            key: "395e9ade0a2adf01eb156ad230b076b5",
-            format: "iframe",
-            height: 50,
-            width: 320,
-            params: {},
-          };
-          document.write(
-            "<scr" +
-              'ipt type="text/javascript" src="http' +
-              (location.protocol === "https:" ? "s" : "") +
-              '://backstagedeputy.com/395e9ade0a2adf01eb156ad230b076b5/invoke.js"></scr' +
-              "ipt>"
-          );
-        </script>
+   
         <small>Ads</small>
       </center>
       <button id="closead">></button>
     </div>
-    <main>
+    <div id="menu">
+      <div>
+        <img src="../img/close.png" id="close-menu" alt="">
+      </div>
+      <div id="search-box">
+        
+        <input id="input-menu" type="text" placeholder="search a word: isotopes"><img id="search" src="../img/search.png" alt="">
+      </div>
+    </div>
+    <main id="main">
       <nav>
         <div id="back">
           <a href="../index.html"><img src="../img/back.png" alt="" /></a>
@@ -57,11 +51,13 @@
 
           <p>THE Ans</p>
         </div>
+        <div id="hamburger">
+          <img src="../img/menu.png" alt="">
+        </div>
       </nav>
 
       <center class="nkk">
-        <!-- ads-----------------------
-] -->
+ 
 
         <div class="container-fluid">
           <br />
@@ -115,7 +111,6 @@
       </center>
     </main>
 
-    <!-- <script  src="/js/jason.js"></script> -->
     <script src="../js/main.js"></script>
     <script type="module" src="./js/eng.js"></script>
     <script
@@ -135,10 +130,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- ads -->
-    <!-- <small>
-      Interest-Based Advertisements</small>
-      <script async="async" data-cfasync="false" src="//backstagedeputy.com/b1fab746b10504fad3a4ae196a8101c8/invoke.js"></script>
-      <div id="container-b1fab746b10504fad3a4ae196a8101c8"></div> -->
+   
   </body>
 </html>

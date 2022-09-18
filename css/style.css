@@ -1,19 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap");
 
 #subject-name {
-  font-family:  'Rubik Moonrocks', cursive;
+  font-family: "Rubik Moonrocks", cursive;
   font-size: 35px;
   color: teal;
   padding: 20px 0;
   padding-top: 60px !important;
-
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300&family=Raleway:wght@200&display=swap");
+body,
+main{
+  background-color: rgb(235, 242, 253) !important;
 
-
-.popup{
+}
+.popup {
   z-index: 1;
   content: "";
   height: 100vh;
@@ -28,33 +29,33 @@
   justify-content: center;
   align-items: center;
   display: none;
-  
 }
-.popup-msg{
+.popup-msg {
   backdrop-filter: blur(15px);
 
   border-radius: 10px;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
-    height:60%;
-    width:80%;
-    background-color: rgba(255, 255, 255, 0.985);
-    position:fixed;
-    margin: 0 auto;
-    z-index: 99 !important;
-    text-align: center;
-    padding-top: 30px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  height: 60%;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.985);
+  position: fixed;
+  margin: 0 auto;
+  z-index: 99 !important;
+  text-align: center;
+  padding-top: 30px;
 }
-.popup-msg img{
+.popup-msg img {
   border-radius: 100px;
   width: 160px;
   padding: 10px;
   margin-bottom: 10px;
 }
-a img{
+a img {
   width: 50px;
   border-radius: 100px;
 }
-#app{
+#app {
   text-decoration: none;
   color: #333;
   display: flex;
@@ -64,8 +65,10 @@ a img{
   width: 20%;
   margin: 0 auto;
 }
-.popup-msg a{
-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(7, 60, 145, 0.456) 0px -2px 16px 2px inset;
+.popup-msg a {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(7, 60, 145, 0.456) 0px -2px 16px 2px inset;
 
   text-decoration: none;
   padding: 15px 30px;
@@ -76,48 +79,45 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 
   letter-spacing: 1px;
   transition: 500ms;
 }
-.popup-msg a:hover{
+.popup-msg a:hover {
   background-color: rgb(22, 56, 56);
-
 }
-.popup-msg p{
-font-family:'Rubik Moonrocks', cursive; 
-color: teal;
-font-size: 3rem;
+.popup-msg p {
+  font-family: "Rubik Moonrocks", cursive;
+  color: teal;
+  font-size: 3rem;
 }
 
-
-#close{
-  position:absolute;
+#close {
+  position: absolute;
   top: 5px;
   right: 5px;
   width: 40px;
   padding: 10px;
 }
-.feedback{
+.feedback {
   display: flex;
-position: fixed; 
-bottom: 0;
-right: 15px;
-background-color: rgb(39, 125, 140); 
-padding: 5px;
-color: rgb(255, 255, 255);
-font-size: 14px;
-justify-content:center ;
-width: 30%;
-height: 40px;
-border-radius: 5px 5px 0 0;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  background-color: rgb(39, 125, 140);
+  padding: 5px;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  justify-content: center;
+  width: 30%;
+  height: 40px;
+  border-radius: 5px 5px 0 0;
 }
-.feedback p{
-  font-family:  Arial, Helvetica, sans-serif;;
+.feedback p {
+  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   align-items: center;
   text-align: center;
   height: 40px;
   padding: 0 0 10px 0;
-
 }
-.feedback img{
+.feedback img {
   margin-left: 10px;
   width: 25px;
   height: 25px;
@@ -129,17 +129,27 @@ border-radius: 5px 5px 0 0;
         background-repeat: no-repeat;
         /* background-attachment: fixed; 
       } */
-.answers{
-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(9, 143, 136, 0.456) 0px -2px 16px 2px inset;
-padding: 10px;
-border-radius: 20px;
-width: 95%;
+.answers {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(9, 143, 136, 0.456) 0px -2px 16px 2px inset;
+  padding: 10px;
+  border-radius: 20px;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
+  width: 95%;
 }
-.nkk button{
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 16px 0px inset;
-
-
+.answers h1{
+  font-family: "Rubik Moonrocks", cursive ;
+}
+.nkk button {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 16px 0px inset;
 }
 body {
   background-position: bottom right;
@@ -173,7 +183,7 @@ body {
   font-family: "Prompt", sans-serif;
 }
 
-nav{
+nav {
   box-shadow: rgb(21, 107, 104) 0px 10px 20px -10px;
   z-index: 9999999999;
   position: fixed;
@@ -186,31 +196,31 @@ nav{
   /* width: 100%; */
   height: 7vh;
   border-bottom: 1px solid rgb(255, 255, 255);
-  padding: 5px 0 ;
+  padding: 5px 0;
   /* background:linear-gradient(45deg,rgb(128, 85, 0),rgb(112, 224, 64)) */
-  background-color:cadetblue
+  background-color: cadetblue;
 }
-nav div{
+nav div {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  font-family:'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 25px;
   /* color: rgb(25, 99, 92) !important; */
   color: #fff;
   gap: 5px;
   /* height: 10vh; */
 }
-nav div img{
+nav div img {
   width: 40px;
   height: 40px;
   border-radius: 100px;
 }
-nav p{
+nav p {
   margin: 0;
 }
-.words{
+.words {
   float: right;
   font-size: 12px;
 }
@@ -218,20 +228,19 @@ nav p{
 .active {
   background-color: rgb(45, 169, 167);
 }
-#back{
+#back {
   position: absolute;
   left: 0;
   width: 70%;
   display: flex;
   justify-content: flex-start;
 }
-#back img{
+#back img {
   padding: 0 0 0 15px;
   width: 40px;
   height: 30px;
 }
 .panel {
-
   border: 1px solid rgba(51, 51, 51, 0.249);
   font-size: 20px;
   color: #333;
@@ -259,7 +268,7 @@ nav p{
   z-index: 99999999;
 }
 #loading img {
-width: 15%;
+  width: 15%;
 }
 #ads {
   position: fixed;
@@ -288,8 +297,75 @@ width: 15%;
   left: 0;
   background-color: cadetblue;
 }
-#choose{
-  
-  font-family:  'Rubik Moonrocks', cursive;
-color: teal;
+#choose {
+  font-family: "Rubik Moonrocks", cursive;
+  color: teal;
+}
+
+
+#hamburger{
+  position: absolute;
+  right:10px;
+  width:40px;
+  text-align: right;
+}
+#hamburger img{
+height: 30px;
+}
+body{
+  overflow-x: hidden;
+}
+main{
+  transform: translateX(0%);
+  transition: 500ms;
+}
+#menu{
+  display: flex;
+background-color: rgba(213, 229, 255, 0.734);
+width: 80%;
+position: fixed;
+right: 0;
+top: 0;
+bottom: 0;
+height: 100vh;
+padding-top: 100px;
+transform: translateX(80%);
+flex-direction: column;
+align-items: center;
+transition: 509ms;
+}
+#close-menu{
+  width: 25px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding:20spx;
+}
+#input-menu{
+  width: 90%;
+outline: none;
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+#search-box{
+  margin: 0 auto;
+  width: 80%;
+  border-radius:20px;
+  padding: 10px;
+
+    display: flex;
+    gap: 10px;
+}
+#search-box img{
+  background-color: teal;
+  border-radius: 100px;
+  padding: 10px;
+  width:40px;
+  height:40px;
+
+}
+::placeholder{
+  opacity: 0.4;
 }

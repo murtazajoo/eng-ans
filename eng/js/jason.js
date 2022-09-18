@@ -4,7 +4,8 @@ export {Flamingo , Vistas ,vImp , FlamingoPoetry};
 
 let Flamingo = [{
     name: "Flamingo",
-    answer : ""
+    answer : "",
+    question:""
 },
     {
         "question": "What had been put up on the bulletin-board?",
@@ -101,7 +102,9 @@ let Flamingo = [{
 ]
 let FlamingoPoetry = [
     {
-        name: "FlamingoPoetry"
+        name: "FlamingoPoetry",
+        answer : "",
+        question:""
     },
     {
         "question": "What is the kind of pain and ache that the poet feels? ",
@@ -150,7 +153,9 @@ let FlamingoPoetry = [
 ]
 
 let Vistas = [{
-    name:"Vistas"
+    name:"Vistas",
+    answer : "",
+    question:""
 },
     {
         "question": "Reflecting on the story, what did you feel about Evans’ having the last laugh? ",
@@ -223,7 +228,9 @@ let Vistas = [{
     }
 ]
 
-let vImp = [{name:"All"},
+let vImp = [{name:"All",
+answer : "",
+question:""},
     {
 
         "question": "Explain the given lines :   Trees sprinting, the merry children spillin  out of their homes, but after the airport’s  security check, standing a few yards away, I looked again at her, wan, pale as a late winter’s moon and felt that old familiar ache. ",
