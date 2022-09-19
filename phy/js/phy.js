@@ -1,36 +1,17 @@
-import { contAgain,popoverList, popoverTriggerList, searchQuestion,dataOutput,menuOpen,menuClose,hamburger,closeMenu} from '../../js/source.js'
+import {search,dataHtml,tQue,clickedShow,contAgain,popoverList, popoverTriggerList, searchQuestion,dataOutput,menuOpen,menuClose,hamburger,closeMenu} from '../../js/source.js'
 
-let dataEntry = document.getElementById("phy-data");
+
+
 hamburger.addEventListener('click',menuOpen)
 closeMenu.addEventListener('click',menuClose)
 let searchBtn = document.getElementById('search')
 
 
-searchBtn.addEventListener('click',()=>{
-  let userInput = document.getElementById('input-menu')
-  dataEntry.innerHTML =""
-  // searchQuestion(Flamingo,userInput,dataHtml)
-  
-   searchQuestion(physicsImp,userInput,dataEntry)
-   contAgain()
 
-  userInput.value = ""
-  if( dataEntry.innerHTML ==""){
-    dataEntry.innerHTML="<h1>Sorry <br> No Result Found</h1>"
-  contAgain()
-
-  }
-  contAgain()
-})
-
-
-setInterval(() => {
-  contAgain()
-}, 500);
 
 let physicsImp = [
   {
-    name: "phy",
+    name: "Full Physics",
     question:"",
     answer : ""
 },
@@ -157,13 +138,11 @@ let physicsImp = [
 
 ];
 
+let arr = [physicsImp]
+searchBtn.addEventListener('click',()=>{search(arr)})
 
 
-dataOutput(physicsImp,dataEntry);
-contAgain();
 
-// let zoomMsg = document.getElementById("zoom-msg")
-// setInterval(() => {
-//     zoomMsg.style.transform="translateY(-100%)"
-// }, 3000);
+clickedShow(physicsImp)
+
 

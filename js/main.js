@@ -18,20 +18,3 @@ function loaded() {
   }, 500);
 }
 
-let closePopup = document.getElementById("close");
-let popUp = document.getElementById("popUp");
-
-setInterval(() => {
-  localStorage.clear();
-}, 120000);
-
-closePopup.addEventListener("click", () => {
-  popUp.style.display = "none";
-  localStorage.setItem("appdownload", "closed");
-});
-
-if (localStorage.getItem("appdownload") !== "closed") {
-  setTimeout(() => {
-    popUp.style.display = "flex";
-  }, 1500);
-}

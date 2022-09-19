@@ -1,12 +1,18 @@
-import { contAgain, popoverList, popoverTriggerList ,dataOutput} from '../../js/source.js'
+import {search,dataHtml,tQue,clickedShow,contAgain,popoverList, popoverTriggerList, searchQuestion,dataOutput,menuOpen,menuClose,hamburger,closeMenu} from '../../js/source.js'
 
-let bioData = document.getElementById("bio-data");
 
-let zoologyData=[
-    {
-        name: "Zoology"
-    },
-        {
+hamburger.addEventListener('click',menuOpen)
+closeMenu.addEventListener('click',menuClose)
+let searchBtn = document.getElementById('search')
+
+
+
+
+let zoologyData=[   {
+        name: "Zoology",
+        "question": "",
+        "answer": ""
+    }, {
             "question": "Cancer",
             "answer": `
 
@@ -70,22 +76,35 @@ let zoologyData=[
             
             Immunotherapy.: Please type of therapy. Immune modulator is used. To kill the cancer cells. Add to stimulate the immune system. Example. Interferon. 
             
-             `
-        },
+             `},
 ]
 let BotanyData=[
     {
-        name: "Botany"
+        name: "Botany",
+        "question": "",
+        "answer": ""
     },
         {
-            "question": "What had been put up on the bulletin-board?",
-            "answer": "The French districts of Alsace and Lorraine had been taken over by the Prussians. Hence, the bulletin board displayed the news that an order had come from Berlin to teach only German in the schools of Alsace and Lorraine."
+            "question": "What is Flower?",
+            "answer": "it is good"
         },
 ]
+let ZoologyBtn = document.getElementById("zoology")
+let BotanyBtn = document.getElementById("botany")
 
 
-showData(zoologyData,bioData)
-contAgain()
+ZoologyBtn.addEventListener('click', () => {
+    clickedShow(zoologyData)
+  })
+  BotanyBtn.addEventListener('click', () => {
+    clickedShow(BotanyData)
+  })
 
-showData(BotanyData,bioData)
-contAgain()
+  
+let arr = [zoologyData,BotanyData]
+searchBtn.addEventListener('click',()=>{search(arr)})
+
+  clickedShow(zoologyData)
+
+
+

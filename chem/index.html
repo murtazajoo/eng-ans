@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Physics</title>
+    <title>Chemistry</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <link
@@ -49,62 +49,83 @@
       </center>
       <button id="closead">></button>
     </div>
-<nav>
-            <div  id="back">
-        <a href="../index.html"><img src="../img/back.png" alt=""></a> 
-       </div>
-          <div>
-            <img src="../img/logo.png" alt="">
-
-            <p>THE Ans</p>
-          </div>
-         </nav>
-    <center class="nkk" style="margin: 0 auto 100px; width: 95%">
+    <div id="menu">
+      <div>
+        <img src="../img/close.png" id="close-menu" alt="" />
+      </div>
+      <div id="search-box">
+        <input
+          id="input-menu"
+          type="text"
+          placeholder="search a word: peddler"
+        /><img id="search" src="../img/search.png" alt="" />
+      </div>
+      <div class="btn-group mb-4 menu_btn" role="group" aria-label="Basic example">
+             
+        <button type="button" class="btn btn-light">
+          <a href="../">Home</a>
+        </button>
+          <button type="button" id="Organic" class="btn btn-warning">
+            Organic
+          </button>
+          <button type="button" id="Inorganic" class="btn btn-primary">
+            Inorganic
+          </button>
+          <button type="button" id="Physical" class="btn btn-info">
+            Physical
+          </button>
+  
     
-      <div class="p-5 container-fluid">
-        <h1 id="subject-name">Chemistry Ans</h1>
+    
       </div>
-      <div class="btn-group mb-4" role="group" aria-label="Basic example">
-        <button type="button" id="Organic" class="btn btn-warning">
-          Organic
-        </button>
-        <button type="button" id="Inorganic" class="btn btn-primary">
-          Inorganic
-        </button>
-        <button type="button" id="Physical" class="btn btn-info">
-          Physical
-        </button>
-       
+    </div>
+
+<main id="main">
+     <nav id="nav_bar">
+ 
+      <div id="back">
+        <a href="../index.html"><img src="../img/back.png" alt="" /></a>
       </div>
-      </center>
-      <center>
-      <br>
-      <button
-        type="button"
-        class="btn btn-lg"
-        data-bs-toggle="popover"
-        data-bs-title="INFO"
-        data-bs-content="Click on the question to reveal the answer.
-        Rotate your Phone for best Experience. You can download the answer by long pressing it
-    "
-      >
-        ℹ️
-      </button>
-      <br />
+      <div>
+        <img src="../img/logo.png" alt="" />
+        <p>THE Ans</p>
+      </div>
+      <div id="hamburger"><img src="../img/menu.png" alt="" /></div>
+    </nav>
+      <center class="nkk" >
+  
+        <div class="p-5 container-fluid">
+          <h1 id="subject-name">Chemistry Ans</h1>
+        </div>
+      
+        <p class="alert alert-success"> <span id="tQue"></span></p>
+        <br>
+        <button
+          type="button"
+          class="btn btn-lg"
+          data-bs-toggle="popover"
+          data-bs-title="INFO"
+          data-bs-content="Click on the question to reveal the answer.
+          Rotate your Phone for best Experience. You can download the answer by long pressing it
+      "
+        >
+          ℹ️
+        </button>
+        <br />
+  
+        <div class="answers" id="html-data"></div>
+  
+  
+  
 
-      <div class="answers" id="chem-data"></div>
-
-
-
-
-<footer>
-  <br>
-  <p>Total number of questions <span id="total"></span></p>
-  <br>
-  &copy; Murtaza And Natiq
-</footer>
-      <!-- ss -->
-    </center>
+  <!-- ss -->
+</center>
+<!-- ads -->
+<small>
+  Interest-Based Advertisements</small>
+  <script async="async" data-cfasync="false" src="//backstagedeputy.com/b1fab746b10504fad3a4ae196a8101c8/invoke.js"></script>
+  <div id="container-b1fab746b10504fad3a4ae196a8101c8"></div>
+</main>
 
 
     <script
@@ -122,10 +143,5 @@
     <script type="module" src="./js/source.js"></script>
 
     
-    <!-- ads -->
-    <small>
-      Interest-Based Advertisements</small>
-      <script async="async" data-cfasync="false" src="//backstagedeputy.com/b1fab746b10504fad3a4ae196a8101c8/invoke.js"></script>
-      <div id="container-b1fab746b10504fad3a4ae196a8101c8"></div>
   </body>
 </html>

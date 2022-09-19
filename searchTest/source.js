@@ -1,5 +1,4 @@
 
-import { contAgain,dataOutput} from '../../js/source.js'
 
 
 let Flamingo = [{
@@ -105,10 +104,22 @@ let start = document.getElementById('start')
 let show=  document.getElementById('display')
 
 
-start.addEventListener('click',()=>{
-    let userInput = document.getElementById('inputq').value
-    let item = Flamingo.filter(item=>item.question.toLowerCase().includes(userInput));
+// start.addEventListener('click',()=>{
+//     let userInput = document.getElementById('inputq').value
+//     let item = Flamingo.filter(item=>item.question.toLowerCase().includes(userInput));
+//     dataOutput(item,show)
+//     contAgain()
+//  })
 
-    dataOutput(item,show)
-    contAgain()
- })
+
+ for(let i =0 ;i < Flamingo.length ; i++){
+show.innerHTML += `{
+    question: "${Flamingo[i].question}",
+    answer: "${Flamingo[i].answer}" ,
+    author:"THE Ans"
+},`
+ }
+
+
+
+

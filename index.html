@@ -31,7 +31,7 @@
         <p>Download Our App</p>
         <img src="img/imgonline-com-ua-resize-McbJZOrFrEO09tL.png" alt="" />
         <br />
-        <a href="https://www.webintoapp.com/store/72157">DOWNLOAD</a>
+        <a href="app.html">DOWNLOAD</a>
       </div>
     </div>
     <div id="loading">
@@ -46,9 +46,9 @@
     </nav>
     <center>
       <h1 id="subject-name">hello!</h1>
-      <p id="choose">Choose Your Subject</p>
+      <p id="choose">Choose Your Subject <span id="name" style="text-transform: uppercase;text-overflow: ellipsis;"></span></p>
       <div class="container d-grid p-3">
-        <a class="fancy" href="eng/">
+        <a class="fancy" href="./english/">
           <span class="top-key"></span>
           <span class="text">English</span>
           <span class="bottom-key-1"></span>
@@ -69,12 +69,12 @@
           <span class="text">Chemistry</span>
           <span class="bottom-key-1"></span>
           <span class="bottom-key-2"></span> </a
-        ><a class="fancy" href="">
+        ><a class="fancy" href="./math/">
           <span class="top-key"></span>
           <span class="text">Maths</span>
           <span class="bottom-key-1"></span>
           <span class="bottom-key-2"></span> </a
-        ><a class="fancy" href="../soon/comingsoon.html">
+        ><a class="fancy" href="./evs/">
           <span class="top-key"></span>
           <span class="text">EVS</span>
           <span class="bottom-key-1"></span>
@@ -86,12 +86,13 @@
           <span class="bottom-key-1"></span>
           <span class="bottom-key-2"></span>
         </a>
-        <a id="app" href="https://www.webintoapp.com/store/72157">
+        <a id="app" href="app.html">
           <img src="img/imgonline-com-ua-resize-McbJZOrFrEO09tL.png" alt="" />
-          App
+   <small>Download App</small>
         </a>
       </div>
     </center>
+    <small><button onclick="nameChange()" style="border: none; background:transparent;">Change Name</button></small>
     <a href="form.html">
       <div class="feedback">
         <p>Feedback</p>
@@ -115,46 +116,42 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
-    <!-- <script>
-  const browser = navigator.userAgent;
-alert(browser);
-
-
- </script> -->
-    <!-- <script>
+     <script>
     
-  function myFunction() { 
-   if((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1 ) 
-  {
-      alert('Opera');
-  }
-  else if(navigator.userAgent.indexOf("Edg") != -1 )
-  {
-      alert('Edge');
-  }
-  else if(navigator.userAgent.indexOf("Chrome") != -1 )
-  {
-      alert('Chrome');
-  }
-  else if(navigator.userAgent.indexOf("Safari") != -1)
-  {
-      alert('Safari');
-  }
-  else if(navigator.userAgent.indexOf("Firefox") != -1 ) 
-  {
-       alert('Firefox');
-  }
-  else if((navigator.userAgent.indexOf("MSIE") != -1 ) || (!!document.documentMode == true )) //IF IE > 10
-  {
-    alert('IE'); 
-  }  
-  else 
-  {
-     alert('unknown');
-  }
-  }
-  myFunction()
-  </script> -->
+let closePopup = document.getElementById("close");
+let popUp = document.getElementById("popUp");
+
+
+
+closePopup.addEventListener("click", () => {
+   popUp.style.display = "none";
+   localStorage.setItem("appdownload", "closed");
+   setTimeout(() => {
+    localStorage.setItem("appdownload", "");
+  }, 600000);
+});
+
+if (localStorage.getItem("appdownload") !== "closed") {
+  setTimeout(() => {
+    popUp.style.display = "flex";
+  }, 1500);
+}
+
+let names
+if (localStorage.getItem("username")) {
+}else{
+  names = window.prompt("Your Name Please")
+localStorage.setItem("username",names)
+}
+function nameChange(){
+  localStorage.setItem("appdownload", null);
+  names = window.prompt("Your Name Please")
+localStorage.setItem("username",names)
+window.location.reload();
+}
+
+
+</script>
 
 
 

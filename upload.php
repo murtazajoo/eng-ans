@@ -33,11 +33,7 @@
 <body>
 		<?php
 
-		// servername => localhost
-		// username => root
-		// password => empty
-		// database name => staff
-		$conn = mysqli_connect("localhost", "root", "", "useraddedquestions");
+		$conn = mysqli_connect("localhost", "id19583302_movieztalk","g_~&<<1tRh\FC@xj", "id19583302_useraddquestions");
 		
 		// Check connection
 		if($conn === false){
@@ -53,7 +49,7 @@
 		
 		// Performing insert query execution
 		// here our table name is college
-		$sql = "INSERT INTO `english`(`Question`, `Answer`, `By`)  VALUES ('$Question',
+		$sql = "INSERT INTO `questions`(`Question`, `Answer`, `By`)  VALUES ('$Question',
 			'$Answer','$By')";
 		
 		if(mysqli_query($conn, $sql)){

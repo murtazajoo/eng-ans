@@ -1,10 +1,18 @@
-import { contAgain, popoverList, popoverTriggerList ,dataOutput} from "../../js/source.js";
+import {search,dataHtml,tQue,clickedShow,contAgain,popoverList, popoverTriggerList, searchQuestion,dataOutput,menuOpen,menuClose,hamburger,closeMenu} from '../../js/source.js'
 
 
 
-let InsertData = document.getElementById('chem-data')
+hamburger.addEventListener('click',menuOpen)
+closeMenu.addEventListener('click',menuClose)
+let searchBtn = document.getElementById('search')
+
 
 let organicChem=[
+    {
+        name: "organicChem",
+        "question": "",
+        "answer": ""
+    },
     {
         question: "organic",
         answer: "test.png",
@@ -15,12 +23,22 @@ let organicChem=[
 
 let inOrganicChem =[
     {
+        name: "inOrganicChem",
+        "question": "",
+        "answer": ""
+    },
+    {
         question: "Inorganic?",
         answer: "test.png",
       },
 ]
 
 let physicalChem =[
+    {
+        name: "physicalChem",
+        "question": "",
+        "answer": ""
+    },
     {
         question: "physical?",
         answer: "test.png",
@@ -31,11 +49,6 @@ let physicalChem =[
 
 
 
-
-
-
-
-// displaydata(organicChem,InsertData)
 contAgain()
 
 
@@ -47,23 +60,20 @@ let physicalBtn = document.getElementById('Physical')
 
 
 organicBtn.addEventListener('click', ()=>{
-   whichBook(organicChem)
+   clickedShow(organicChem)
     })
     
 inOrganicBtn.addEventListener('click', ()=>{
-whichBook(inOrganicChem)
+clickedShow(inOrganicChem)
 })
 
 physicalBtn.addEventListener('click', ()=>{
-  whichBook(physicalChem)
+  clickedShow(physicalChem)
     })
 
 
-    function whichBook(a){
-        InsertData.innerHTML=""
-        displaydata(a,InsertData)
-        contAgain()
-}
-
-
-whichBook(organicChem)
+    let arr = [organicChem,inOrganicChem,physicalChem]
+    searchBtn.addEventListener('click',()=>{search(arr)})
+    
+    
+clickedShow(organicChem)

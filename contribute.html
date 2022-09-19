@@ -7,9 +7,7 @@
     <title>CONTRIBUTE</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
-        body{
-            background-color: #b1bded11 !important;
-        }
+      
         #illus{
             width: 100%;
         }
@@ -128,7 +126,12 @@ ul{
         <li>Your Questions will be reviewed by our team.If they approve it then we will publish it on our website with your name 🙂</li>
     </ul>
 </footer>
+<script>
+  if (localStorage.getItem("username")) {
+    document.getElementById('By').value = localStorage.getItem("username")
+}
 
+</script>
 
  
 </body>
