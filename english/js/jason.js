@@ -84,12 +84,12 @@ let Flamingo = [{
     },
     {
        "question":"Who was the Boss of Gemini Studios?",
-       "answer":"Poets And Pancakes. Who was The Boss of Gemini Studios? The Boss of the Gemini Studios was Mr. S.S.",
+       "answer":"S.S. Vasan was The Boss of Gemini Studios",
        "author":"THE Ans"
     },
     {
        "question":"Why was Kothamangalam Subbu considered No. 2 in Gemini Studios? ",
-       "answer":" Kothamangalam Subbu succeeded in securing the place closest to The Boss by means of flattery. He was not brilliant but a rather cheerful person and exceedingly loyal to The Boss. He offered solutions whenever The Boss was in a fix. Thus, the other employees considered him No.",
+       "answer":" Kothamangalam Subbu succeeded in securing the place closest to The Boss by means of flattery. He was not brilliant but a rather cheerful person and exceedingly loyal to The Boss. He offered solutions whenever The Boss was in a fix. Thus, the other employees considered him No.2",
        "author":"THE Ans"
     },
     {
